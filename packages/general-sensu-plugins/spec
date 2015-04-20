@@ -1,0 +1,4 @@
+---
+name: general-sensu-plugins
+dependencies: []
+files: [general-sensu-plugins/**/*]

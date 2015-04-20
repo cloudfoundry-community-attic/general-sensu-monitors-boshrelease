@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# USAGE: /var/vcap/packages/our-plugins/bin/run-plugin check-load.rb -p cron -C 1
+
+DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+cd $DIR/..
+
+plugin=$1; shift
+
+bundle exec ruby plugins/$plugin $@

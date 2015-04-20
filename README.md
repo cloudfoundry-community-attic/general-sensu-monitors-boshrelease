@@ -1,6 +1,14 @@
-# BOSH Release for general-sensu-monitors
+BOSH Release for general-sensu-monitors
+=======================================
 
-## Usage
+Usage
+-----
+
+```yaml
+templates:
+- {release: sensu-client, name: sensu-client}
+- {release: general-sensu-monitors, name: general-sensu-monitors}
+```
 
 To use this bosh release, first upload it to your bosh:
 
@@ -31,7 +39,7 @@ For AWS & Openstack, the default deployment assumes there is a `default` securit
 
 Create a file `my-networking.yml`:
 
-``` yaml
+```yaml
 ---
 networks:
   - name: general-sensu-monitors1
