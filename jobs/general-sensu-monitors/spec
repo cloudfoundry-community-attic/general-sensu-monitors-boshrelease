@@ -1,0 +1,13 @@
+---
+name: general-sensu-monitors
+packages: []
+templates:
+  bin/monit_debugger: bin/monit_debugger
+  bin/general_sensu_monitors_ctl: bin/general_sensu_monitors_ctl
+  config/general_sensu_monitors.conf.erb: config/general_sensu_monitors.conf
+  data/properties.sh.erb: data/properties.sh
+  helpers/ctl_setup.sh: helpers/ctl_setup.sh
+  helpers/ctl_utils.sh: helpers/ctl_utils.sh
+properties:
+  general_sensu_monitors.leader_address:
+    description: Hostname/IP to the leader/master of the cluster

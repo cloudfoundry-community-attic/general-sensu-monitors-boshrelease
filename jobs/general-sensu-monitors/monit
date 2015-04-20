@@ -1,0 +1,5 @@
+check process general_sensu_monitors
+  with pidfile /var/vcap/sys/run/general_sensu_monitors/general_sensu_monitors.pid
+  start program "/var/vcap/jobs/general_sensu_monitors/bin/monit_debugger general_sensu_monitors_ctl '/var/vcap/jobs/general_sensu_monitors/bin/general_sensu_monitors_ctl start'"
+  stop program "/var/vcap/jobs/general_sensu_monitors/bin/monit_debugger general_sensu_monitors_ctl '/var/vcap/jobs/general_sensu_monitors/bin/general_sensu_monitors_ctl stop'"
+  group vcap
