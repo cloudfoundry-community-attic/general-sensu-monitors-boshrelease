@@ -7,7 +7,7 @@ Usage
 ```yaml
 templates:
 - {release: sensu-client, name: sensu-client}
-- {release: general-sensu-monitors, name: general-sensu-monitors}
+- {release: general-sensu-monitors, name: general-sensu-plugins}
 ```
 
 To use this bosh release, first upload it to your bosh:
