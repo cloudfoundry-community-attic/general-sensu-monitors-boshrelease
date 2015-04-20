@@ -1,4 +1,4 @@
 ---
 name: general-sensu-plugins
-dependencies: []
+dependencies: [sensu-plugin-ruby]
 files: [general-sensu-plugins/**/*]

@@ -7,7 +7,8 @@ CPUS=$(grep -c ^processor /proc/cpuinfo)
 # $BOSH_COMPILE_TARGET - where this package & spec'd source files are available
 # $BOSH_INSTALL_TARGET - where you copy/install files to be included in package
 
-cp general-sensu-plugins/* $BOSH_INSTALL_TARGET
+cp -ar general-sensu-plugins/* $BOSH_INSTALL_TARGET
+cd ${BOSH_INSTALL_TARGET}
 
-bundle_cmd=/var/vcap/packages/ruby-2.1.4/bin/bundle
+bundle_cmd=/var/vcap/packages/sensu-plugin-ruby/bin/bundle
 $bundle_cmd install --local --deployment --without development test

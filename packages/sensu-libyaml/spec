@@ -1,0 +1,7 @@
+---
+name: sensu-libyaml
+meta:
+ - source: http://pyyaml.org/wiki/LibYAML
+ - direct: http://pyyaml.org/download/libyaml/yaml-0.1.5.tar.gz
+files:
+  - libyaml/yaml-0.1.5.tar.gz

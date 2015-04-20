@@ -6,5 +6,6 @@ DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 cd $DIR/..
 
 plugin=$1; shift
+export PATH=/var/vcap/packages/sensu-plugin-ruby/bin:$PATH
 
 bundle exec ruby plugins/$plugin $@
