@@ -1,5 +1,5 @@
 ---
-name: general-sensu-monitors
+name: plugins
 packages: [sensu-plugin-ruby, general-sensu-plugins]
 templates:
   ignoreme: ignoreme
