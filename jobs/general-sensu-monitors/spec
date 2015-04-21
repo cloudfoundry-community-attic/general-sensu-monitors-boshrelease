@@ -3,3 +3,7 @@ name: general-sensu-monitors
 packages: [sensu-plugin-ruby, general-sensu-plugins]
 templates:
   ignoreme: ignoreme
+properties:
+  ignoreme:
+    description: "Ignore me"
+    default: false
