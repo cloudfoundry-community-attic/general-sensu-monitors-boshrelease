@@ -12,7 +12,7 @@ update:
   update_watch_time: 1000-30000
 
 jobs:
-  - name: general_sensu_monitors_z1
+  - name: plugins
     instances: 1
     networks:
       - name: general_sensu_monitors1

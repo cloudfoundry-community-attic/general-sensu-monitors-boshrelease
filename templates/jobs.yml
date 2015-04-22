@@ -9,8 +9,10 @@ update:
   serial: false
 
 jobs:
-  - name: general_sensu_monitors_z1
-    template: general-sensu-monitors
+  - name: plugins
+    templates:
+      - name: plugins
+        release: general-sensu-monitors
     instances: 0
     resource_pool: small_z1
     networks: (( merge ))

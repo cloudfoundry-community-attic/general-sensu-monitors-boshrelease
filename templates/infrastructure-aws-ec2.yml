@@ -9,7 +9,7 @@ meta:
     version: latest
 
 jobs:
-  - name: general_sensu_monitors_z1
+  - name: plugins
     instances: 2
     networks:
       - name: general_sensu_monitors1
