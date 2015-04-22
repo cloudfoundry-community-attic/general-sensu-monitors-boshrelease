@@ -1,6 +1,6 @@
 ---
 name: plugins
-packages: [sensu-plugin-ruby, general-sensu-plugins]
+packages: [sensu-libyaml, sensu-plugin-ruby, general-sensu-plugins]
 templates:
   ignoreme: ignoreme
 properties:
