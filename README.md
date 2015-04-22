@@ -1,8 +1,22 @@
-BOSH Release for general-sensu-monitors
-=======================================
+Sensu client monitoring plugins for BOSH
+========================================
+
+This BOSH release is a compliament/extension to https://github.com/FreightTrain/sensu-client-boshrelease to provide a set of useful sensu client plugins.
 
 Usage
 -----
+
+For any given BOSH deployment you want to monitor add the following sections:
+
+To the `releases:` section add:
+
+```yaml
+releases:
+- {name: sensu-client, version: latest}
+- {name: general-sensu-monitors, version: latest}
+```
+
+Add the following to each job's `templates:` section:
 
 ```yaml
 templates:
